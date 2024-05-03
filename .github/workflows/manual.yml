@@ -27,11 +27,8 @@ jobs:
     - name: Install Dependencies
       run: cd frontend && npm install  # Install all dependencies
     
-    - name: Set Permissions
-      run: cd frontend && chmod +x deploy.sh  # Set executable permissions for your script
-    
     - name: Deploy
       env: 
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: cd frontend && ./deploy.sh  # Deploy your app
+      run: cd frontend && npm run predeploy $$ npm run deploy  # Deploy your app
     
