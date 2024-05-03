@@ -26,7 +26,7 @@ function HomePage() {
             </a>
         </div>
 
-        <p>Not a front end engineer. #HTTR</p>
+        <p>Not a front end engineer. #HTTR #HTTC</p>
       </div>
       
       {/* Work Experience Section */}
