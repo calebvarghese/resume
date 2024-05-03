@@ -20,7 +20,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Change Directory
-      run: cd frontend 
+      run: cd frontend/ 
     - name: Permissions
       run: chmod +x deploy.sh
     - name: Deploy
