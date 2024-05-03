@@ -16,8 +16,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3  # Checkout your codebase
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        token: ${{ secrets.GH_TOKEN }}
     
     - name: Setup Node.js
       uses: actions/setup-node@v3  # Sets up Node.js (you can specify the version)
