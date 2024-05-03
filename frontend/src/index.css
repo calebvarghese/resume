@@ -1,6 +1,5 @@
 :root{
-  --card-color: #CF9421;
-  --socialIcon:   #666666;    /* Social links icon color */
+  --card-color: #D3A625;
 }
 
 body {
@@ -12,9 +11,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #EEECE3;
   padding: 30px;
-  background: linear-gradient(-45deg, #E1F7F5, #9AC8CD, #0E46A3, #153448, #232E3F);
+  background: linear-gradient(-45deg, #FFFFFF, #9E1C1C, #7D0A0A, #5B1414);
   background-size: 400% 400%;
-  animation: gradient 60s ease infinite;
+  animation: gradient 30s ease infinite;
 }
 
 @keyframes gradient {
@@ -31,7 +30,7 @@ body {
 
 
 .header {
-  color: #232E3F; 
+  color: #5B1414; 
   font-size: xx-large;
   text-decoration: underline;
 }
