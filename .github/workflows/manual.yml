@@ -15,18 +15,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3  # Make sure the workflow checks out your code
+      uses: actions/checkout@v3  # Checkout your codebase
     
-    - name: Print Working Directory
-      run: pwd  # This shows the current directory
-
-    - name: List Files
-      run: ls -la frontend  # List all files in 'frontend' to ensure deploy.sh is there
-
-    - name: Change Directory and Set Permissions
-      run: cd frontend && chmod +x deploy.sh
-      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3  # Sets up Node.js (you can specify the version)
+      with:
+        node-version: '18'  # Or the Node.js version you require
+    
+    - name: Install Dependencies
+      run: cd frontend && npm install  # Install all dependencies
+    
+    - name: Build the Project
+      run: cd frontend && npm run build  # Build the React project
+    
+    - name: Set Permissions
+      run: cd frontend && chmod +x deploy.sh  # Set executable permissions for your script
+    
     - name: Deploy
-      run: cd frontend && ./deploy.sh
-
+      run: cd frontend && ./deploy.sh  # Deploy your app
       
