@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #EEECE3;
+  background-color: #232E3F;
+  padding: 30px;
+}
+
+.header {
+  color: #232E3F; 
+  font-size: xx-large;
+  text-decoration: underline;
+}
+
+/* Style for the whole homepage container */
+.homepage-container {
+  display: flex;
+  flex-direction: column; /* Default to vertical layout (for mobile) */
+  padding: 20px;
+}
+
+/* Style for the top-left image */
+.profile-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Ensures space between the image and social icons */
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin to separate from main content */
+  background-color: #CF9421;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1.15);
+}
+
+/* Style for social media icons */
+.social-wrapper {
+  text-align: center;
+  padding-top: '10px';
+  display: 'flex';
+  flex-direction: 'row';
+}
+
+.social-wrapper .icon{
+  background-color: #ffffff00; /* transparent, dont change */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.social-wrapper .github:hover {
+  background-color: #333333;
+  color: var(--socialHover);
+}
+
+/* Section for work experience and certifications */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Spacing between sections */
+  background-color: #CF9421;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1.15);
+}
+
+.social-wrapper .github:hover {
+  background-color: #333333;
+  color: var(--socialHover);
+}
+
+.social-wrapper .email:hover {
+  background-color: #de463b;
+  color: var(--socialHover);
+}
+
+.social-wrapper .linkedin:hover {
+  background-color: #0A66C2;
+  color: var(--socialHover);
+}
+
+.jobTime {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  margin-block-start: 0.67em;
+}
+span b {
+  font-size: 15px;
+  font-weight: normal;
+  float:right;
+  position:relative;
+  top: 10px;
+}
+
+/* Layout adjustments for desktop screens */
+@media (min-width: 768px) {
+  .homepage-container {
+    flex-direction: row; /* Switch to horizontal layout */
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start; /* Align vertically at the top */
+  }
+
+  .profile-section {
+    flex: 1; /* Occupy one part of the horizontal layout */
+  }
+
+  .main-content {
+    flex: 2; /* Occupy two parts of the horizontal layout */
+    margin-left: 20px; /* Space between sections */
+  }
+
+  .social-icons {
+    margin-top: 10px; /* Space between image and icons */
+  }
+}
