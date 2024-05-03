@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #EEECE3;
-  padding: 30px;
+  padding: 10px;
   background: linear-gradient(-45deg, #FFFFFF, #9E1C1C, #7D0A0A, #5B1414);
   background-size: 400% 400%;
   animation: gradient 30s ease infinite;
@@ -28,39 +28,35 @@ body {
   }
 }
 
-
 .header {
   color: #5B1414; 
   font-size: xx-large;
   text-decoration: underline;
 }
 
-/* Style for the whole homepage container */
 .homepage-container {
   display: flex;
-  flex-direction: column; /* Default to vertical layout (for mobile) */
+  flex-direction: column; 
   padding: 20px;
 }
 
-/* Style for the top-left image */
 .profile-image {
   width: 100px;
   border-radius: 50%;
-  margin-bottom: 10px; /* Ensures space between the image and social icons */
+  margin-bottom: 10px; 
 }
 
 .profile-section {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
+  align-items: center; 
   padding: 20px;
-  margin-bottom: 20px; /* Add margin to separate from main content */
+  margin-bottom: 20px; 
   background-color: var(--card-color);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 1.15);
 }
 
-/* Style for social media icons */
 .social-wrapper {
   text-align: center;
   padding-top: '10px';
@@ -69,7 +65,7 @@ body {
 }
 
 .social-wrapper .icon{
-  background-color: #ffffff00; /* transparent, dont change */
+  background-color: #ffffff00; 
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -86,11 +82,10 @@ body {
   color: var(--socialHover);
 }
 
-/* Section for work experience and certifications */
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Spacing between sections */
+  gap: 10px; 
   background-color: var(--card-color);
   padding: 20px;
   border-radius: 10px;
@@ -126,7 +121,6 @@ span b {
   top: 10px;
 }
 
-/* Layout adjustments for desktop screens */
 @media (min-width: 768px) {
   .homepage-container {
     flex-direction: row; /* Switch to horizontal layout */
