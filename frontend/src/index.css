@@ -6,9 +6,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #EEECE3;
-  background-color: #232E3F;
   padding: 30px;
+  background: linear-gradient(-45deg, #E1F7F5, #9AC8CD, #0E46A3, #153448, #232E3F);
+  background-size: 400% 400%;
+  animation: gradient 60s ease infinite;
 }
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 
 .header {
   color: #232E3F; 
