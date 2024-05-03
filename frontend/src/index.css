@@ -5,9 +5,116 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #EEECE3;
+  background-color: #232E3F;
+  padding: 20px;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+.header {
+  color: #CF9421; /* Your desired hex code */
+}
+
+/* Style for the whole homepage container */
+.homepage-container {
+  display: flex;
+  flex-direction: column; /* Default to vertical layout (for mobile) */
+  padding: 20px;
+}
+
+/* Style for the top-left image */
+.profile-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Ensures space between the image and social icons */
+}
+
+/* Style for social media icons */
+.social-wrapper {
+  display: flex;
+  text-align: center;
+  padding-top: '10px';
+  display: 'flex';
+  flex-direction: 'row';
+  padding: '10px'
+}
+
+.social-wrapper .icon{
+  background-color: #ffffff00; /* transparent, dont change */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.social-wrapper .github:hover {
+  background-color: #333333;
+  color: var(--socialHover);
+}
+
+/* Section for work experience and certifications */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between sections */
+}
+
+.social-wrapper .github:hover {
+  background-color: #333333;
+  color: var(--socialHover);
+}
+
+.social-wrapper .email:hover {
+  background-color: #de463b;
+  color: var(--socialHover);
+}
+
+.social-wrapper .linkedin:hover {
+  background-color: #0A66C2;
+  color: var(--socialHover);
+}
+
+.jobTime {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  margin-block-start: 0.67em;
+}
+span b {
+  font-size: 15px;
+  font-weight: normal;
+  float:right;
+  position:relative;
+  top: 10px;
+}
+
+/* Layout adjustments for desktop screens */
+@media (min-width: 768px) {
+  .homepage-container {
+    flex-direction: row; /* Switch to horizontal layout */
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start; /* Align vertically at the top */
+  }
+
+  .profile-section {
+    flex: 1; /* Occupy one part of the horizontal layout */
+  }
+
+  .main-content {
+    flex: 2; /* Occupy two parts of the horizontal layout */
+    margin-left: 20px; /* Space between sections */
+  }
+
+  .social-icons {
+    margin-top: 10px; /* Space between image and icons */
+  }
 }
