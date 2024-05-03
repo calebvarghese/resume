@@ -1,4 +1,5 @@
 import React from 'react';
+import ProPic from '../src/ProPic.jpeg'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Import specific icons
 
 function HomePage() {
@@ -8,7 +9,7 @@ function HomePage() {
       {/* Top left image */}
       <div className='profile-section'>
         <img
-          src="/ProPic.jpeg"
+          src={ProPic}
           alt="Profile"
           style={{ width: '100px', borderRadius: '50%' }}
         />
