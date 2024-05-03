@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Import spe
 function HomePage() {
   return (
     <div className='homepage-container'>
+
       {/* Top left image */}
       <div className='profile-section'>
         <img
@@ -12,9 +13,6 @@ function HomePage() {
           style={{ width: '100px', borderRadius: '50%' }}
         />
 
-        {/* Social media icons 
-        style={{ marginTop: '10px', display: 'flex', flexDirection: 'row', padding: '10px' }}
-        */}
         <div className='social-wrapper'>
             <a href="https://github.com/calebvarghese" class="icon github">
             <FaGithub size={24} />
@@ -27,15 +25,15 @@ function HomePage() {
             <FaEnvelope size={24} />
             </a>
         </div>
+
+        <p>Not a front end engineer.</p>
       </div>
-
       
-
       {/* Work Experience Section */}
       <div className='main-content'>
 
         <h2 className='header'>Work Experience</h2>
-        
+
         <div>
             <span class="jobTime">DevOps Engineer II<b>Sep 2023 - Present</b></span>
             <p><b>BTI360, Herndon, VA</b></p>

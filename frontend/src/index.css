@@ -7,16 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #EEECE3;
   background-color: #232E3F;
-  padding: 20px;
+  padding: 30px;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 .header {
-  color: #CF9421; /* Your desired hex code */
+  color: #232E3F; 
+  font-size: xx-large;
+  text-decoration: underline;
 }
 
 /* Style for the whole homepage container */
@@ -33,14 +30,23 @@ body {
   margin-bottom: 10px; /* Ensures space between the image and social icons */
 }
 
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin to separate from main content */
+  background-color: #CF9421;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1.15);
+}
+
 /* Style for social media icons */
 .social-wrapper {
-  display: flex;
   text-align: center;
   padding-top: '10px';
   display: 'flex';
   flex-direction: 'row';
-  padding: '10px'
 }
 
 .social-wrapper .icon{
@@ -65,7 +71,11 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Spacing between sections */
+  gap: 10px; /* Spacing between sections */
+  background-color: #CF9421;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1.15);
 }
 
 .social-wrapper .github:hover {
