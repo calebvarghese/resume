@@ -1,3 +1,8 @@
+:root{
+  --card-color: #CF9421;
+  --socialIcon:   #666666;    /* Social links icon color */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -51,7 +56,7 @@ body {
   align-items: center; /* Center items horizontally */
   padding: 20px;
   margin-bottom: 20px; /* Add margin to separate from main content */
-  background-color: #CF9421;
+  background-color: var(--card-color);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 1.15);
 }
@@ -87,7 +92,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px; /* Spacing between sections */
-  background-color: #CF9421;
+  background-color: var(--card-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 1.15);
