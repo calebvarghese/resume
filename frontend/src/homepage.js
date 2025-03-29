@@ -64,6 +64,7 @@ function HomePage() {
             <p>Hashicorp Terraform Certification (June 2022)</p>
             <p>CompTIA Security Plus CE (Feb 2023)</p>
             <p>AWS Certified Solutions Architect - Associate (Feb 2024)</p>
+            <p>Azure Fundamentals (March 2025)</p>
         </div>
       </div>
 
